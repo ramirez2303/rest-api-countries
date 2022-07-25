@@ -1,14 +1,18 @@
-import { Stack } from "@chakra-ui/react";
-import React from "react";
+import { Container, Flex } from "@chakra-ui/react";
+import FilterMenu from "./components/FilterMenu";
 import SearchInput from "./components/SearchInput";
 
 const Home = () => {
   return (
-    <>
-      <Stack>
+    <Container maxWidth="container.xl" gap="100px">
+      <Flex justifyContent="space-between" alignItems="center">
         <SearchInput />
-      </Stack>
-    </>
+        <FilterMenu />
+      </Flex>
+      <Flex>
+        
+      </Flex>
+    </Container>
   );
 };
 
